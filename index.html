@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fav.png" type="image/png">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mediol school - IT курси для підлітків від 10 до 17 та дорослих</title>
+</head>
+<body>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+    <header>
+        <div class="header_wrap">
+            <div class="nav_menu">
+                <input type="checkbox" id="toggle">
+                <label for="toggle">
+                    <span></span>
+                </label>
+                <nav>
+                    <ul class="menu_list">
+                        <li><a href="">Menu item 1</a></li>
+                        <li><a href="">Menu item 2</a></li>
+                        <li><a href="">Menu item 3</a></li>
+                        <li><a href="">Menu item 4</a></li>
+                        <li><a href="">Menu item 5</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+380669073185" class="phone">+38 (066) 907 3185</a>
+            </div>
+            <div class="callback">
+                <input type="checkbox" id="callback_toggle">
+                <label for="callback_toggle">
+                    Замовити дзвінок <span><img src="img/phone.svg" alt=""></spa>
+                </label>
+                <div class="popup_form">
+                    <form action="" id="popupForm">
+                        <input type="text" hidden value="Popup form">
+                        <input type="text" placeholder="Ваше ім'я" required>
+                        <input type="tel" placeholder="Ваш телефон" required>
+                        <div class="form_btn">
+                            <input type="submit" value="Замовити дзвінок">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </header>
+    <div class="social">
+        <ul>
+            <!-- <li>
+                <a href="#" target="_blank">
+                    <img src="img/fb.svg" alt="">
+                </a>
+            </li> -->
+            <li>
+                <a href="https://www.instagram.com/ivan_medvedew/" target="_blank">
+                    <img src="img/inst.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://t.me/ivan_medvedew/" target="_blank">
+                    <img src="img/tg.svg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UC0uMsgaQ_adp_dP4Izlfqvg" target="_blank">
+                    <img src="img/yt.svg" alt="">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <main id="fullpage">
+        <section class="hero" data-anchor="block1">
+            <div class="section_wrap">
+                <div class="hero_title">
+                    <svg viewBox="0 0 691 210" width="691">
+                        <defs>
+                            <mask id="mask">
+                            <rect width="100%" height="100%" fill="#fff"></rect>
+                            <line x1="190" x2="440" y1="5" y2="200" stroke="#000" stroke-width="10"></line>
+                            </mask>
+                        </defs>
+                        <g mask="url(#mask)">
+                            <text class="big" x="0" y="80">mediol</text>
+                            <text class="small" x="5" y="110">it школа для дітей</text>
+                            <text class="big" x="170" y="190">school</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+            <div class="section_form">
+                <form action="" id="heroForm">
+                    <input type="text" hidden value="Section hero form">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <div class="form_btn">
+                        <input type="submit" value="Хочу пробне заняття">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section data-anchor="block2">
+            <div class="section_wrap">
+                
+            </div>
+        </section>
+        <section data-anchor="block3">
+            <div class="section_wrap">
+                
+            </div>
+        </section>
+        <section data-anchor="block4">
+            <div class="section_wrap">
+                
+            </div>
+         </section>
+    </main>
+    <!-- scroll menu -->
+    <ul id="menu">
+        <li data-menuanchor="block1">
+            <a href="#block1" class="scroll_link"></a>
+        </li>
+        <li data-menuanchor="block2">
+            <a href="#block2" class="scroll_link"></a>
+        </li>
+        <li data-menuanchor="block3">
+            <a href="#block3" class="scroll_link"></a>
+        </li>
+        <li data-menuanchor="block4">
+            <a href="#block4" class="scroll_link"></a>
+        </li>
+    </ul>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#fullpage').fullpage({
+                anchors: ['block1', 'block2', 'block3', 'block4'],
+                menu: '#menu',
+                css3: true,
+                scrollingSpeed: 1000
+            });
+        });
+    </script>
+</body>
+</html>
