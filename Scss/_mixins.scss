@@ -1,0 +1,46 @@
+// mixins
+@mixin popupForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: $popupBg;
+    position: absolute;
+    top: -100vh;
+    right: -100%;
+    transition: all .5s;
+}
+@mixin form ($inputBorder) {
+    display: flex;
+    flex-direction: column;
+    .form_btn {
+        width: 100%;
+        background: url(../img/arrow.svg) center right / 25% no-repeat;
+    }
+    input {
+        width: 500px;
+        height: 65px;
+        border: none;
+        border-bottom: 1px solid $inputBorder;
+        background-color: transparent;
+        margin-bottom: 14px;
+        &:focus {
+            outline: none;
+        }
+    }
+    input[type="submit"] {
+        display: block;
+        border: none;
+        text-align: left;
+        text-transform: uppercase;
+        color: $goldColor;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.25em;
+        margin-bottom: 0;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

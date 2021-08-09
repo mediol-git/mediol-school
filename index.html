@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/fav.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/scroll.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Mediol school - IT курси для підлітків від 10 до 17 та дорослих</title>
@@ -20,7 +22,7 @@
                 </label>
                 <nav>
                     <ul class="menu_list">
-                        <li><a href="">Menu item 1</a></li>
+                        <li><a href="about.html">Про нас</a></li>
                         <li><a href="">Menu item 2</a></li>
                         <li><a href="">Menu item 3</a></li>
                         <li><a href="">Menu item 4</a></li>
@@ -50,11 +52,6 @@
     </header>
     <div class="social">
         <ul>
-            <!-- <li>
-                <a href="#" target="_blank">
-                    <img src="img/fb.svg" alt="">
-                </a>
-            </li> -->
             <li>
                 <a href="https://www.instagram.com/ivan_medvedew/" target="_blank">
                     <img src="img/inst.svg" alt="">
@@ -85,7 +82,7 @@
                         </defs>
                         <g mask="url(#mask)">
                             <text class="big" x="0" y="80">mediol</text>
-                            <text class="small" x="5" y="110">it школа для дітей</text>
+                            <text class="small" x="5" y="110">онлайн it школа для дітей</text>
                             <text class="big" x="170" y="190">school</text>
                         </g>
                     </svg>
@@ -102,20 +99,124 @@
                 </form>
             </div>
         </section>
-        <section data-anchor="block2">
+        <section class="advantages" data-anchor="block2">
             <div class="section_wrap">
-                
+                <h2>Завдяки чому ваша дитина створить <br>свій перший власний проєкт?</h2>
+                <a href="about.html" class="btn_link">Більше про наш підхід до навчання</a>
+            </div>
+            <div class="text_box text_box_1">
+                <img src="img/svg-editor-image.svg" alt="">
+                <div class="text_wrap">
+                    <h3>Менторство</h3>
+                    <p>Наші вчителі мають індивідуальний підхід до кожної дитини. Вони завжди допомагають, але так, щоб дитина робила все власноруч</p>
+                </div>
+            </div>
+            <div class="text_box text_box_2">
+                <img src="img/svg-editor-image.svg" alt="">
+                <div class="text_wrap">
+                    <h3>Оточення <span>мотивованих</span> та <span>ініціативних</span> дітей</h3>
+                    <p>Кожна дитина, що прийшла на курс зацікавлена майбутніми успіхами</p>
+                </div>
+            </div>
+            <div class="text_box text_box_3">
+                <img src="img/svg-editor-image.svg" alt="">
+                <div class="text_wrap">
+                    <h3><span>Реалізовані проєкти</span> як результат навчання</h3>
+                    <p>По закінченню навчання діти не тільки отримують сертифікати, а й мають вже готові проєкти в портфоліо</p>
+                </div>
+            </div>
+            <div class="section_form">
+                <form action="" id="advForm">
+                    <input type="text" hidden value="Section advantages form">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <div class="form_btn">
+                        <input type="submit" value="Хочу пробне заняття">
+                    </div>
+                </form>
             </div>
         </section>
-        <section data-anchor="block3">
-            <div class="section_wrap">
-                
-            </div>
+        <section class="courses" data-anchor="block3">
+            <ul class="course_list">
+                <li class="course-item">
+                    <h2 class="course_title">HTML + CSS</h2>
+                    <a href="#" class="course_link">Детальніше</a>
+                </li>
+                <li class="course-item">
+                    <h2 class="course_title">Front-end</h2>
+                    <a href="#" class="course_link">Детальніше</a>
+                </li>
+                <li class="course-item">
+                    <h2 class="course_title">Wordpress</h2>
+                    <a href="#" class="course_link">Детальніше</a>
+                </li>
+            </ul>
         </section>
-        <section data-anchor="block4">
+        <section class="ceo" data-anchor="block4">
             <div class="section_wrap">
-                
+                <img src="img/ceo.jpg" alt="CEO Mediol School avatar">
+                <div class="ceo_text">
+                    <h2>майбутнє - за програмуванням. і наші діти зіграють в цьому головну роль!</h2>
+                    <p>Програмування, за версією The World Economic Forum, це одна з ТОП-навичок, що буде потрібна у майбутньому.</p>
+                    <p>Тому якщо ви хочете знайти для своєї дитини актуальну та цікаву професію з високою зарплатою, то програмування та веб-розробка - це саме те що потрібно.</p>
+                    <p>Онлайн IT-курси для дітей - це не швидкий майстер-клас чи семінар від відомого фахівця. Це цікава та насичена необхідними навичками система навчання, що сподобається підлітку та його батькам. Вона підійде для тих, хто бажає перетворити любов дитини до комп’ютерних ігор в корисний навчальний процес чи підкаже з чого почати вести свій блог.</p>
+                </div>
             </div>
+            <div class="section_form">
+                <form action="" id="heroForm">
+                    <input type="text" hidden value="Section hero form">
+                    <input type="text" placeholder="Ваше ім'я" required>
+                    <input type="tel" placeholder="Ваш телефон" required>
+                    <div class="form_btn">
+                        <input type="submit" value="Хочу пробне заняття">
+                    </div>
+                </form>
+            </div>
+         </section>
+         <section class="trusting" data-anchor="block5">
+             <div class="section_wrap">
+                <h2>чому нам довіряють <span>__</span></h2>
+                <ul class="trust_list">
+                    <li>
+                        <img src="img/trust-img.jpg" alt="">
+                        <h3>Розвиваємося і контролюємо якість</h3>
+                        <p>Працюємо за новітніми стандартами якості та використовуємо сучасні технології навчання.</p>
+                    </li>
+                    <li>
+                        <img src="img/trust-img.jpg" alt="">
+                        <h3>Відкрито спілкуємось з дітьми та батьками</h3>
+                        <p>Щомісяця батьки отримують від нас звітність та зворотний зв'язок про успіхи дітей у навчанні.</p>
+                    </li>
+                    <li>
+                        <img src="img/trust-img.jpg" alt="">
+                        <h3>Показуємо зрозумілий результат навчання</h3>
+                        <p>Протягом навчання учні реалізовують проєкти: від простих концептів до реальних стартапів.</p>
+                    </li>
+                    <li>
+                        <img src="img/trust-img.jpg" alt="">
+                        <h3>Відповідаємо за безпеку</h3>
+                        <p>Уважно ставимося до безпеки, контролюємо присутність та тримаємо зв'язок з батьками.</p>
+                    </li>
+                </ul>
+             </div>
+         </section>
+         <section class="testimonials" data-anchor="block6">
+             <div class="section_wrap">
+                <h2>Відгуки учнів про нас <span>__</span></h2>
+                <div class="tesimonials_slider" data-slick='{"slidesToShow": 4, "slidesToScroll": 4}'>
+                    <div><h3>1</h3></div>
+                    <div><h3>2</h3></div>
+                    <div><h3>3</h3></div>
+                    <div><h3>4</h3></div>
+                    <div><h3>5</h3></div>
+                    <div><h3>6</h3></div>
+                </div>
+             </div>
+         </section>
+         <section class="projects" data-anchor="block7">
+             <div class="section_wrap">
+                <h2>Останні реалізовані учнями проєкти <span>__</span></h2>
+             </div>
          </section>
     </main>
     <!-- scroll menu -->
@@ -132,6 +233,15 @@
         <li data-menuanchor="block4">
             <a href="#block4" class="scroll_link"></a>
         </li>
+        <li data-menuanchor="block5">
+            <a href="#block5" class="scroll_link"></a>
+        </li>
+        <li data-menuanchor="block6">
+            <a href="#block6" class="scroll_link"></a>
+        </li>
+        <li data-menuanchor="block7">
+            <a href="#block7" class="scroll_link"></a>
+        </li>
     </ul>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -144,6 +254,34 @@
                 css3: true,
                 scrollingSpeed: 1000
             });
+        });
+    </script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.9.0/slick/slick.min.js"></script>
+    <script>
+        $('.tesimonials_slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                }
+                }
+            ]
         });
     </script>
 </body>

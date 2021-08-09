@@ -1,0 +1,17 @@
+<svg width="279" height="143" xmlns="http://www.w3.org/2000/svg">
+ <!-- <g>
+  <title>background</title>
+  <rect fill="#ffffff" id="canvas_background" height="145" width="281" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g> -->
+ <g>
+  <ellipse stroke="#fec830" ry="24.5" rx="24.5" id="svg_4" cy="117.628374" cx="25.25" fill-opacity="null" stroke-opacity="null" stroke-width=".5" fill="#00000000"/>
+  <ellipse stroke="#fec830" ry="18.000001" rx="18.000001" id="svg_6" cy="117.668914" cx="25.750001" fill-opacity="null" stroke-opacity="null" stroke-width="1" fill="#00000000"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_1" y2="5.668915" x2="272.75" y1="5.668915" x1="135.75" stroke-width="1" stroke="#fec830" fill="#fec830"/>
+  <line stroke-linecap="undefined" stroke-linejoin="undefined" id="svg_2" y2="108.374806" x2="34.044109" y1="5.668915" x1="136.75" stroke-width="1" stroke="#fec830" fill="#fec830"/>
+  <ellipse ry="11.5" rx="11.5" id="svg_7" cy="117.168915" cx="25.25" stroke-width="1" stroke="#fec830" fill="#fec830"/>
+  <ellipse stroke="#fec830" ry="5.108108" rx="5.108108" id="svg_5" cy="5.858104" cx="272.804054" stroke-width="1" fill="#fec830"/>
+ </g>
+</svg>

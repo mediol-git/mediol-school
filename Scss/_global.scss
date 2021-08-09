@@ -1,0 +1,148 @@
+@import "mixins";
+
+// vars
+$containerWidth: 80%;
+
+// $goldColor: #FFAC30;
+$goldColor: #fec830;
+$darkText: #333;
+$whiteText: #fff;
+$popupBg: rgba(0, 0, 0, .95);
+$toggleColor: #fff;
+$formBg: #fff;
+
+// fonts
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Bruno Ace';
+    src: url(../fonts/bruno_ace.ttf);
+}
+
+// global styles
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: $whiteText;
+}
+h1 {
+    font-family: 'Bruno Ace';
+}
+a {
+    text-decoration: none;
+}
+input[type="checkbox"] {
+    display: none;
+}
+span {
+    color: $goldColor;
+}
+.header_wrap,
+.menu_list {
+    width: $containerWidth;
+    max-width: 100%;
+    margin: 0 auto;
+}
+section {
+    position: relative;
+}
+section::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+.section_wrap {
+    width: $containerWidth;
+    max-width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    > h2 {
+        font-family: 'Roboto', serif;
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 300;
+    }
+}
+
+// forms
+#popupForm {
+    @include form(rgba(255, 255, 255, 0.15))
+}
+form {
+    @include form(rgba(0, 0, 0, 0.15))
+}
+
+// logo
+.logo {
+    display: block;
+    width: 70px;
+    position: absolute;
+    left: 50px;
+    top: 40px;
+    z-index: 9;
+    img {
+        width: 100%;
+    }
+}
+
+// social
+.social {
+    position: absolute;
+    bottom: 60px;
+    left: 70px;
+    z-index: 9;
+    ul {
+        list-style: none;
+        text-align: center;
+        li {
+            margin-top: 45px;
+        }
+    }
+    img {
+        opacity: .4;
+        transition: opacity .3s;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+// section_form
+.section_form {
+    background-color: $formBg;
+    padding: 50px 80px;
+    position: absolute;
+    z-index: 7;
+    bottom: 0;
+    right: 0;
+}
